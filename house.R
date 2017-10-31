@@ -106,7 +106,7 @@ submit <- data.frame(ID = test$Id , SalePrice = predict)
 predict[is.na(pedict)] <- mean(predict, na.rm = "TRUE")
 write.csv(submit, file="House1.csv" , row.names=FALSE)
 
-#BAKCHODII..
+#Alternate method to normalise
 normal <- function(x)
 {
   x <-(x-y)%/%z
